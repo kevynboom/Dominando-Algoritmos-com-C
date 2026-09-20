@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include <locale.h>
 
 // 30. questão
@@ -8,8 +7,5 @@ int main() {
 
 
 
-
-
     return 0;
-
 }
