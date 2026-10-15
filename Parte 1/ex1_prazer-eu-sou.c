@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
 
-// 1. Faça um programa que apresente um estudante universitário considerando seu nome, curso que estuda, semestre atual e seu hobby favorito.
 int main() {
     setlocale(LC_ALL, "");
 
