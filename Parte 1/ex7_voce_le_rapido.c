@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "");
+
+    char nomeLivro[100];
+    int paginas, segundosPorPagina, tempoTotal;
+
+    printf("--- Tempo de Leitura ---\n");
+    printf("Digite o nome do livro: ");
+    fgets(nomeLivro, sizeof(nomeLivro), stdin);
+
+    printf("Digite o total de páginas: ");
+    scanf("%d", &paginas);
+
+    printf("Digite o tempo em segundos para ler cada página: ");
+    scanf("%d", &segundosPorPagina);
+
+    tempoTotal = paginas * segundosPorPagina; 
+    
+    printf("\n--- Resultado ---\n");
+    printf("Livro: %s", nomeLivro);
+    printf("Total de páginas: %d\n", paginas);
+    printf("Tempo por página: %d segundos\n", segundosPorPagina);
+    printf("Tempo total de leitura: %d segundos\n", tempoTotal);
+
+    return 0;
+}

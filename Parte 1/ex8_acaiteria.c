@@ -4,14 +4,8 @@
 int main() {
     setlocale(LC_ALL, "");
 
-    int pequeno;
-    int medio;
-    int grande;
-
-    float desconto;
-    float valorTotal;
-    float valorDesconto;
-    float valorFinal;
+    int pequeno, medio, grande;
+    float desconto, valorTotal, valorDesconto, valorFinal;
 
     printf("--- Venda de Açaí ---\n");
     printf("Digite a quantidade de açaí pequeno: ");
@@ -26,9 +20,9 @@ int main() {
     printf("Digite a porcentagem de desconto: ");
     scanf("%f", &desconto);
 
-    valorTotal = (pequeno * 13.50) + (medio * 15.00) + (grande * 17.50); // Calculando o valor total da venda
-    valorDesconto = valorTotal * desconto / 100; // Calculando o valor do desconto
-    valorFinal = valorTotal - valorDesconto; // Calculando o valor final
+    valorTotal = (pequeno * 13.50) + (medio * 15.00) + (grande * 17.50); 
+    valorDesconto = valorTotal * desconto / 100; 
+    valorFinal = valorTotal - valorDesconto; 
 
     printf("\n--- Resultado ---\n");
     printf("Açaí pequeno: %d\n", pequeno);
